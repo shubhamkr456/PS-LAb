@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://unpkg.com/mathjs@5.3.1/dist/math.min.js"></script>
+	<script type='text/javascript' src="codehere.js"></script>
+	<style>
+	body{
+		margin:0;
+		color:white;
+		font-weight: bolder;
+		width:100%; 
+		min-width:800px;
+		background-image: url("bg.gif")!important;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+
+	.wrapper{
+		padding: 10 px;
+	}
+
+
+/*new elements*/
+	input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+	</style>
+
+</head>
+
+<body style="text-align:center;">
+<!--
+		<div id="abcd" style="width:100%;" ></div>
+		<div id="eff"></div>-->
+
+		<div class="wrapper" style= "width:35%; text-align: left!important; margin:auto;">
+		<form onsubmit= "getData()" style= "text-align:center!important; margin: auto;" >
+
+
+			<h3>Enter the type of line as -short-, -medium-,-mediumt-, -long-</h3>
+			<label for="ltype">Enter the Type of line</label>
+			<select id="ltype">
+			  <option value="short">Short</option>
+			  <option value="medium">Medium Pi</option>
+			  <option value="mediumt">Medium T</option>
+			  <option value="long">Long</option>
+			</select>
+
+			 
+		
+			<label for="length">Enter the length of the line</label>
+			<input type="text" id="length" placeholder="Length in km">
+		
+            
+            <label for="impedance">Enter the impedance of the line</label>
+            <input type="text" id="impedance" placeholder="Impedance value as -a+bi-">
+            
+            <label for="admi">Enter the admittance of the line</label>
+			<input type="text" id="admi" placeholder="Admittance as -c+di-">
+
+		  
+			<input type="submit" value="Submit">
+		  </form>
+		  </div>
+<p> Shubham K T</p>
+
+
+
+</body>
+</html>

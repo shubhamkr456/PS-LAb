@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://unpkg.com/mathjs@5.3.1/dist/math.min.js"></script>
+	<script type='text/javascript' src="codehere.js"></script>
+	<style>
+	body{
+		margin:0;
+		color:white;
+		font-weight: bolder;
+		width:100%; 
+		min-width:800px;
+		background-image: url("bg.gif")!important;
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+
+	.wrapper{
+        background-color:rgba(77, 77, 51, 0.7);
+        height: 85%;
+
+	}
+
+
+/*new elements*/
+	input[type=text], select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: auto;
+  display: block!important;
+  border-bottom: 2px solid #0066cc;
+  border-left: 0;
+
+  margin-bottom: 20px!important;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+label{
+    font-family: "Times New Roman", Times, serif;
+    font-size:1.2em;
+    color:#e0ebeb;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align:center;
+}
+
+li {
+padding: 14px 16px;
+font-size:25px;
+}
+
+input[type=submit]{
+
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+
+  font-size: 20px;
+  margin:50px;
+  cursor: pointer;
+}
+
+	</style>
+
+</head>
+
+<body style="text-align:center;">
+
+<ul>
+<li> Abcd Parameters Calculator</li>
+</ul>
+<!--
+		<div id="abcd" style="width:100%;" ></div>
+		<div id="eff"></div>-->
+
+		<div class="wrapper" style= "width:35%;max-width:400px; min-width:120px;text-align: left!important; margin:2em 2em auto 2em;">
+		<form onsubmit= "getData()" style= "text-align:center!important; margin: auto;" >
+        <br/>
+        <br/>
+
+
+			<label for="ltype" style="padding-top:18px!important; margin-top:20px!important;">Enter the Type of line</label>
+			<select id="ltype">
+			  <option value="short">Short</option>
+			  <option value="medium">Medium Pi</option>
+			  <option value="mediumt">Medium T</option>
+			  <option value="long">Long</option>
+			</select>
+
+			 
+		
+			<label for="length">Enter the length of the line</label>
+			<input type="text" id="length" placeholder="Length in km">
+		
+            
+            <label for="impedance">Enter the impedance of the line</label>
+            <input type="text" id="impedance" placeholder="Impedance value as -a+bi-">
+            
+            <label for="admi">Enter the admittance of the line</label>
+			<input type="text" id="admi" placeholder="Admittance as -c+di-">
+
+		  
+			<input type="submit" value="Submit">
+		  </form>
+		  </div>
+
+
+
+
+</body>
+</html>
